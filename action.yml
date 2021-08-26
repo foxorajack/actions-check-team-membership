@@ -1,0 +1,20 @@
+name: 'Check User Membership'
+description: 'Checks if the github actor is within the given organisation team'
+author: 'Jack Johnson'
+branding:
+  icon: 'users'
+  color: 'purple'
+inputs:
+  org:
+    description: 'Zip package of Lambda and dependencies'
+    default: ''
+  team_slug:
+    description: 'Name of Lambda function'
+    default: ''
+  actor:
+    description: 'AWS secret key'
+    default: ''
+  
+runs:
+  using: 'node12'
+  main: 'index.js'
